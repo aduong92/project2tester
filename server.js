@@ -3,7 +3,7 @@ var http = require("http");
 var fs = require("fs");
 
 // Set our port to 8080
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 // Create our server
 var server = http.createServer(handleRequest);
@@ -22,6 +22,6 @@ function handleRequest(req, res) {
 }
 
 // Starts our server
-server.listen(PORT, function() {
+server.listen(PORT, "0.0.0.0", function() {
   console.log("Server is listening on PORT: " + PORT);
 });
