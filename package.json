@@ -1,0 +1,19 @@
+{
+  "name": "project2tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aduong92/project2tester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aduong92/project2tester/issues"
+  },
+  "homepage": "https://github.com/aduong92/project2tester#readme"
+}
