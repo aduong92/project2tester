@@ -9,13 +9,14 @@ var PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 
 
 // Create our server
-app.get('/jsQr.js', function(req, res) {
-    res.sendFile(path.join(__dirname + '/jsQr.js'));
-});
+//app.get('/jsQr.js', function(req, res) {
+//    res.sendFile(path.join(__dirname + '/jsQr.js'));
+//});
 
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
