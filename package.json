@@ -4,6 +4,9 @@
   "description": "",
   "main": "./dist/jsQR.js",
   "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "10.15.1"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "./node_modules/.bin/webpack",
@@ -37,7 +40,5 @@
     "url": "https://github.com/aduong92/project2tester/issues"
   },
   "homepage": "https://github.com/aduong92/project2tester#readme"
-},
-"engines": {
-  "node": "10.15.1"
 }
+
