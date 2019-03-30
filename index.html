@@ -12,12 +12,6 @@
       margin: 0 auto;
       position: relative;
     }
-    #githubLink {
-      position: absolute;
-      right: 0;
-      top: 12px;
-      color: #2D99FF;
-    }
     h1 {
       margin: 10px 0;
       font-size: 40px;
@@ -28,11 +22,11 @@
       background-color: #eee;
     }
     #canvas {
-      width: 100%;
+      width: 50%;
+      height: 50%;
     }
     #output {
       margin-top: 20px;
-      background: #eee;
       padding: 10px;
       padding-bottom: 0;
     }
@@ -46,9 +40,7 @@
   </style>
 </head>
 <body>
-  <h1>jsQR Demo</h1>
-  <a id="githubLink" href="https://github.com/cozmo/jsQR">View documentation on Github</a>
-  <p>Pure JavaScript QR code decoding library.</p>
+  <h1>QR Scanner Demo</h1>
   <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
   <canvas id="canvas" hidden></canvas>
   <div id="output" hidden>
