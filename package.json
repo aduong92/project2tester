@@ -2,33 +2,12 @@
   "name": "project2tester",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/jsQR.js",
-  "types": "./dist/index.d.ts",
+  "main": "index.js",
   "engines": {
     "node": "10.15.1"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "./node_modules/.bin/webpack",
-    "watch": "./node_modules/.bin/webpack --watch",
-    "lint": "tslint --project .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^4.0.2",
-    "@types/jest": "^20.0.8",
-    "@types/node": "^8.0.27",
-    "awesome-typescript-loader": "^3.2.3",
-    "fs-extra": "^4.0.1",
-    "jest": "^23.1.0",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^20.0.14",
-    "ts-node": "^3.3.0",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.2",
-    "upng-js": "^1.0.1",
-    "webpack": "^3.10.0"
   },
   "repository": {
     "types": "./dist/index.d.ts",
@@ -36,9 +15,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aduong92/project2tester/issues"
-  },
   "homepage": "https://github.com/aduong92/project2tester#readme"
 }
 
