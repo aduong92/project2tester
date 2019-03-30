@@ -37,4 +37,7 @@
     "url": "https://github.com/aduong92/project2tester/issues"
   },
   "homepage": "https://github.com/aduong92/project2tester#readme"
+},
+"engines": {
+  "node": "10.15.1"
 }
