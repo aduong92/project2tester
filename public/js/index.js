@@ -7,7 +7,11 @@ $(document).ready(function() {
   var outputContainer = document.getElementById("output");
   var outputMessage = document.getElementById("outputMessage");
   var outputData = document.getElementById("outputData");
+  var successMessage = document.getElementById("successfulMessage");
   var newId;
+
+  //successMessage.display = hidden;
+
   $("#result").click(function() {
     window.location.pathname = "./result";
   });
@@ -102,8 +106,10 @@ $(document).ready(function() {
         outputMessage.hidden = true;
         outputData.parentElement.hidden = false;
         outputData.innerText = code.data;
+        outputData.hidden = true;
+        successMessage.hidden = false;
       } else {
-        //outputMessage.hidden = false;
+        //outputData.innerText.hidden = true;
         //outputData.parentElement.hidden = true;
       }
     }

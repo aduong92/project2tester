@@ -41,13 +41,14 @@
                         <canvas id="canvas" hidden></canvas>
                         <div id="output" hidden>
                             <div id="outputMessage">No QR code detected.</div>
-                            <div hidden><b>Data:</b> <span id="outputData"></span></div>
+                            <div hidden id="successfulMessage">Data Scanned!</div>
+                            <div hidden><span id="outputData"></span></div>
                         </div>
                         <br>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
                                 placeholder="SEARCH BY ITEM ID">
-                        </div>
+                        </div> -->
                         <button id="submit" class="btn btn-primary float-right">Submit</button>
                     </div>
                     <br>

@@ -217,3 +217,8 @@ table, th, td
     padding: 2px 3px;
     text-align: left;
 }
+#successfulMessage{
+  font-weight: bold;
+  color: #00c292;
+  font-size: 20px;
+}
