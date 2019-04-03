@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <title>Summary Page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="logo">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="left-content">
+                <ul role="tablist">
+                    <li role="presentation"><a href="/public/index.html" aria-controls="home" role="tab"
+                            data-toggle="tab"><span><i class="fa fa-home"></i></span>Home</a></li>
+                    <li role="presentation" class="active"><a href="../public/result.html" aria-controls="home" role="tab"
+                            data-toggle="tab"><span><i class="fa fa-info"></i></span>Result</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>KEEPER APP</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-content text-center">
+                <div id="one" class="content active fade in">
+                    <div id="result" class="content active fade in">
+                        <div class="prod-container" id="defaultDiv">
+                            <h3>INVENTORY SUMMARY</h3>
+                            <br>
+                            <table class="table text-left" id="defaultTable">
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Category Name</th>
+                                        <th>Location</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/js/result.js"></script>
+</body>
+
+</html>

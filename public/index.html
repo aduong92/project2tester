@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="logo">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="left-content">
+                <ul role="tablist">
+                    <li role="presentation" class="active"><a href="./index.html" aria-controls="home" role="tab"
+                            data-toggle="tab"><span><i class="fa fa-home"></i></span>Home</a></li>
+                    <li role="presentation"><a href="./result.html" aria-controls="home" role="tab"
+                            data-toggle="tab" id= "result"><span><i class="fa fa-info"></i></span>Summary All</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>KEEPER APP</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-content text-center">
+                <div id="one" class="content active fade in">
+                    <h1><span>HOMEPAGE</span></h1>
+                    <div class="created">
+                        <h3>Item Searcher</h3>
+                        <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam
+                            enabled)</div>
+                        <canvas id="canvas" hidden></canvas>
+                        <div id="output" hidden>
+                            <div id="outputMessage">No QR code detected.</div>
+                            <div hidden><b>Data:</b> <span id="outputData"></span></div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                                placeholder="SEARCH BY ITEM ID">
+                        </div>
+                        <button id="submit" class="btn btn-primary float-right">Submit</button>
+                    </div>
+                    <br>
+                    <div class="result-container" id="resultDiv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/jsQR.js"></script>
+
+</body>
+
+</html>
